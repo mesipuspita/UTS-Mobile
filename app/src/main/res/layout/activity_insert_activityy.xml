@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.InsertActivityy">
+    <ImageView
+        android:id="@+id/gambar_santri"
+        android:layout_marginTop="70dp"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/k" />
+    <ImageView
+        android:id="@+id/gambar44"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/gambar_santri"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/th" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTRI DATA SANTRI"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TableLayout
+        android:id="@+id/tbl1"
+        android:layout_below="@+id/gambar44"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtidsantri"
+                android:text="Id Santri : "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editidsantri"
+                    android:hint="id"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtnamasantri"
+                android:text="Nama Santri : "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editnamasantri"
+                    android:hint="namasantri"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txttingkatan"
+                android:text="Tingkat Kelas : "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edittingkat"
+                    android:hint="tingkat"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txthafalansurat"
+                android:text="Hafalan Surat : "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edithafalansurat"
+                    android:hint="hafalan Surat"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtbaca"
+                android:text="Baca AlQur'an: "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editBacaansholat"
+                    android:hint="Surat dan ayat"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txthafalansholat"
+                android:text="Bacaan Sholat : "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edithafalansholat"
+                    android:hint="hafalan Sholat"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txttanggal"
+                android:text="Tanggal: "
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <com.google.android.material.textfield.TextInputLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edittanggal"
+                    android:hint="Tanggal "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btninput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="INPUT" />
+</RelativeLayout>

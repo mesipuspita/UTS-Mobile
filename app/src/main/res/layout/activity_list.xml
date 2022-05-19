@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ListActivity"
+    android:background="@drawable/k">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="APP PENGURUS TPA/TPSA "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gambar_santri"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/judul"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/d" />
+
+
+    <TextView
+        android:id="@+id/tamnama"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar_santri"
+        android:layout_centerHorizontal="true"
+        android:text="NURUL HUDDA "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/gambar2"
+        android:src="@drawable/td"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tamnama"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnEntri"
+        android:onClick="Entri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Entri Data Santri" />
+    <ImageView
+        android:id="@+id/gambar3"
+        android:src="@drawable/th"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnEntri"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:onClick="List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="List Data Santri"
+        />
+
+</RelativeLayout>
